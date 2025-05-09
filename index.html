@@ -93,9 +93,6 @@
 </head>
 <body>
 
-
-
-  
   <div class="album">
     <!-- Portada del disco -->
     <div class="cover">
@@ -106,7 +103,7 @@
       </div>
     </div>
 
-<!-- Canción 1 -->
+    <!-- Canción 1 -->
     <div class="cancion">
       <img src="img/adgian.png" alt="Portada de la canción">
       <div class="contenido">
@@ -118,8 +115,6 @@
         </audio>
       </div>
     </div>
-
-
 
     <!-- Canción 2 -->
     <div class="cancion">
@@ -173,7 +168,7 @@
       </div>
     </div>
 
-     <!-- Canción 6 -->
+    <!-- Canción 6 -->
     <div class="cancion">
       <img src="img/MURCIANO.jpg" alt="Portada de la canción">
       <div class="contenido">
@@ -185,7 +180,6 @@
         </audio>
       </div>
     </div>
-
 
     <!-- Canción 7 -->
     <div class="cancion">
@@ -213,8 +207,7 @@
       </div>
     </div>
 
-
-     <!-- Canción 9 -->
+    <!-- Canción 9 -->
     <div class="cancion">
       <img src="img/tabuneteE.png" alt="Portada de la canción">
       <div class="contenido">
@@ -239,7 +232,6 @@
         </audio>
       </div>
     </div>
-
 
     <!-- Canción 11 -->
     <div class="cancion">
@@ -267,7 +259,6 @@
       </div>
     </div>
 
-
     <!-- Canción 13 -->
     <div class="cancion">
       <img src="img/sunsineElectro.jpeg" alt="Portada de la canción">
@@ -281,10 +272,7 @@
       </div>
     </div>
 
-
-
-
- <!-- Canción 14 -->
+    <!-- Canción 14 -->
     <div class="cancion">
       <img src="img/tabudelegagod.jpeg" alt="Portada de la canción">
       <div class="contenido">
@@ -296,7 +284,6 @@
         </audio>
       </div>
     </div>
-
 
     <!-- Canción 15 -->
     <div class="cancion">
@@ -311,7 +298,7 @@
       </div>
     </div>
 
-     <!-- Canción 16 -->
+    <!-- Canción 16 -->
     <div class="cancion">
       <img src="img/tabualfon.jpeg" alt="Portada de la canción">
       <div class="contenido">
@@ -324,7 +311,7 @@
       </div>
     </div>
 
-     <!-- Canción 17 -->
+    <!-- Canción 17 -->
     <div class="cancion">
       <img src="img/tabubaby.jpeg" alt="Portada de la canción">
       <div class="contenido">
@@ -336,7 +323,6 @@
         </audio>
       </div>
     </div>
-
 
     <!-- Canción 18 -->
     <div class="cancion">
@@ -351,17 +337,21 @@
       </div>
     </div>
 
-
-
-
-
-
-
-
-    <!-- Aquí puedes copiar más bloques .cancion -->
   </div>
 
-
-
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const audios = document.querySelectorAll('audio');
+      audios.forEach(audio => {
+        audio.addEventListener('play', () => {
+          audios.forEach(other => {
+            if (other !== audio) {
+              other.pause();
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
