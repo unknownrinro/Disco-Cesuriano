@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL DISCO CESURIANO</title>
+  <style>
+    /* Estilos básicos para móvil */
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f0f0f0;
+      color: #333;
+    }
+    .album {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    /* Estilos para la portada del disco */
+    .cover {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 600px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .cover img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: block;
+    }
+    .cover .info {
+      padding: 15px;
+      text-align: center;
+    }
+    .cover .info h1 {
+      margin: 10px 0 5px;
+      font-size: 2rem;
+    }
+    .cover .info p {
+      margin: 0;
+      font-size: 1rem;
+      color: #666;
+    }
+    /* Estilos de cada canción */
+    .cancion {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .cancion img {
+      width: 100%;
+      height: auto;      /* ahora la imagen mantiene proporción completa */
+      display: block;
+      border-bottom: 1px solid #eee;
+    }
+    .contenido {
+      padding: 15px;
+    }
+    .contenido h2 {
+      margin: 0 0 10px;
+      font-size: 1.4rem;
+    }
+    .contenido p {
+      margin: 0 0 15px;
+      line-height: 1.5;
+    }
+    .contenido audio {
+      width: 100%;
+      outline: none;
+    }
+    .btn-js-play {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      background: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  
+  <div class="album">
+    <!-- Portada del disco -->
+    <div class="cover">
+      <img src="img/LOGOCESUG.jpg" alt="Portada del disco">
+      <div class="info">
+        <h1>EL DISCO CESURIANO</h1>
+        <p>LAS AVENTURAS Y CHANCHULLOS DEL MEJOR LUGAR DEL MUNDO PARA ESTUDIAR</p>
+      </div>
+    </div>
+
+<!-- Canción 1 -->
+    <div class="cancion">
+      <img src="img/adgian.png" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>ADRIÁN AMA CESUR</h2>
+        <p>En el poco tiempo que lleva Adrían en cesur ya esta fascinado con los cesurianos ,su estilo al dar clase y la grandiosa organización cesuriana.</p>
+        <audio controls>
+          <source src="canciones/adrianCesur.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+
+
+    <!-- Canción 2 -->
+    <div class="cancion">
+      <img src="img/chagly.jpg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>Charly Rap</h2>
+        <p>Chagly el mejor tutor del mundo se ha puesto a talar como la pulga borrachuza que es y pasa esto..</p>
+        <audio controls>
+          <source src="canciones/charlyrap.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+    <!-- Canción 3 -->
+    <div class="cancion">
+      <img src="img/charlypayaso.jpeg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>Charly Rap V2.0</h2>
+        <p>El borrachuzo Marin y sus aventuras, en otra versión..</p>
+        <audio controls>
+          <source src="canciones/charlyrapE.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+    <!-- Canción 4 -->
+    <div class="cancion">
+      <img src="img/TABUGOD.jpeg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>Detective Tabugod</h2>
+        <p>Hombre embarazo esta desatado,es un gigolo,el mejor detective del lugar en cuanto a stalkear muchachas se refiere...</p>
+        <audio controls>
+          <source src="canciones/detectiveTabugod.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+    <!-- Canción 5 -->
+    <div class="cancion">
+      <img src="img/MURCIANO2.jpg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>EL MESÍAS DE MURCIA</h2>
+        <p>Trás la salida de Pablitro el favorito de Adrian, ha llegado el Murciano el mejor programador de todos los tiempos..</p>
+        <audio controls>
+          <source src="canciones/elMesiasMurcia.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+     <!-- Canción 6 -->
+    <div class="cancion">
+      <img src="img/MURCIANO.jpg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>EL MESÍAS DE MURCIA ELECTRO</h2>
+        <p>Versión electronica del Murciano favorito de los cesurianos..</p>
+        <audio controls>
+          <source src="canciones/elmesiasElectro.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+
+    <!-- Canción 7 -->
+    <div class="cancion">
+      <img src="img/originalTabu.jpeg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>EL HOMBRE EMBARAZO</h2>
+        <p>La canción de origen, donde todo empezo, inspirada por el santo triponcio...</p>
+        <audio controls>
+          <source src="canciones/embarazoOriginal.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+    <!-- Canción 8 -->
+    <div class="cancion">
+      <img src="img/tabunete.png" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>EL TABUNETE ME LO ROBARON</h2>
+        <p>Nuestro delegado Tabugod ha perdido su Tabunete, su vehículo oficial, anda triste y con una crisis de fe hacia Alfonsito su diosito.</p>
+        <audio controls>
+          <source src="canciones/tabunete.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+
+     <!-- Canción 9 -->
+    <div class="cancion">
+      <img src="img/tabuneteE.png" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>EL TABUNETE ME LO ROBARON VERSION POP</h2>
+        <p>Tabugod ha perdido su tabunete y cree que longa fue responsable, otra version para el tabunete me lo robaroon...</p>
+        <audio controls>
+          <source src="canciones/tabunetePop.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+    <!-- Canción 10 -->
+    <div class="cancion">
+      <img src="img/pablitro.jpeg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>PABLIRAAAP</h2>
+        <p>Pablitro se ha ganado el amor de Adrián y su duo favorito Longayul con su carisma,sus 4 carreras y sus Masterclass</p>
+        <audio controls>
+          <source src="canciones/pablirap.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+
+    <!-- Canción 11 -->
+    <div class="cancion">
+      <img src="img/ESPETERO.jpg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>Sabiduria Cesuriana</h2>
+        <p>Adrián esta encantado con como funciona cesur, solo falta conocer a su lider.</p>
+        <audio controls>
+          <source src="canciones/cesug.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+    <!-- Canción 12 -->
+    <div class="cancion">
+      <img src="img/SUNSINE.jpg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>SUNSHINE CREMA</h2>
+        <p>Cesur esta fascinada con su profesor de ingles y las canciones que crea, a parte de estar encantados con la gestion de espetero, el lider cesuriano.</p>
+        <audio controls>
+          <source src="canciones/sunsine.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+
+    <!-- Canción 13 -->
+    <div class="cancion">
+      <img src="img/sunsineElectro.jpeg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>SUNSHINE CREMA ELECTRO</h2>
+        <p>Un toque electrónico para la gran canción que es Shunsine Cremaaa.</p>
+        <audio controls>
+          <source src="canciones/sunsineElectro.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+
+
+
+ <!-- Canción 14 -->
+    <div class="cancion">
+      <img src="img/tabudelegagod.jpeg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>TABUDELEGAGOD</h2>
+        <p>Tabugod ha pasado a segundo en extrañas circunstancias, ha vuelto mas fuerte que nunca y se ha hecho con el poder, para codearse con los mas grandes lideres cesurianos como espetero.</p>
+        <audio controls>
+          <source src="canciones/tabudelegado.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+
+    <!-- Canción 15 -->
+    <div class="cancion">
+      <img src="img/NEANDERTABU.jpg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>TABUDELEGAGOD COUNTRY</h2>
+        <p>Lo mismo pero en country un toque sureño, que a tabugod le queda que ni pintado.</p>
+        <audio controls>
+          <source src="canciones/tabudelegadoCountry.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+     <!-- Canción 16 -->
+    <div class="cancion">
+      <img src="img/tabualfon.jpeg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>TABUNERO</h2>
+        <p>La gente sigue sin creerse que Tabugod haya aprobado todo, en esta canción se cuenta la verdad.</p>
+        <audio controls>
+          <source src="canciones/tabucountry.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+     <!-- Canción 17 -->
+    <div class="cancion">
+      <img src="img/tabubaby.jpeg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>TABUVACACIONES(HIT DEL VERANO 2024)</h2>
+        <p>Después de darlo todo por perdido san Alfonsito o regalos externos a cambio de chele,Tabugod aprobó todo y ahora se irá de vacaciones</p>
+        <audio controls>
+          <source src="canciones/tabuvacaciones.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+
+    <!-- Canción 18 -->
+    <div class="cancion">
+      <img src="img/tabuner.jpeg" alt="Portada de la canción">
+      <div class="contenido">
+        <h2>TABUPOP</h2>
+        <p>El hombre embarazo sigue teniendo fe con las de cesug y quiero recuperarse después de haber perdido a la latina. 33!!!</p>
+        <audio controls>
+          <source src="canciones/tabupop.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Aquí puedes copiar más bloques .cancion -->
+  </div>
+
+
+
+</body>
+</html>
